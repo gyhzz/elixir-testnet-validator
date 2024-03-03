@@ -26,3 +26,4 @@
 3. Build image using this command -> docker build . -f Dockerfile -t elixir-validator
 4. Run the image in a new container using this command -> docker run -d --restart unless-stopped --name ev elixir-validator
 5. To verify that your container is running, use the command docker ps -a
+6. To see logs from your running Docker container, use this command -> docker logs -f <container id>
