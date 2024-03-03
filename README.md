@@ -1,6 +1,6 @@
 # elixir-testnet-validator
 
-###Follow these steps to start an Elixir Testnet Validator
+### Follow these steps to start an Elixir Testnet Validator
 
 Create New VM Instance on GCP Compute Engine
 1. Start a new VM instance on GCP using Compute Engine 
