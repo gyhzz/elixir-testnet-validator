@@ -32,6 +32,6 @@
 #### Stake ELXR and Enroll Your Validator
 1. To enroll your validator to the network, you need to stake at least 100 ELXR tokens
 2. First, go to https://goerli-faucet.pk910.de/ to mine some Goerli ETH. You will need this to perform transactions such as staking on the Goerli ETH testnet
-3. Enter your address and start mining. You can increase the number of workers to a max of 32 and claim your Goerli ETH once you mined a minimum of 0.02
+3. Enter your address and start mining. You can increase the number of workers and claim your Goerli ETH once you mined a minimum of 0.02
 4. Once you have some Goerli ETH, go to https://dashboard.elixir.finance/
 5. Connect your wallet, claim your EXLR tokens, stake them, and enroll your address's validator
