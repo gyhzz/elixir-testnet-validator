@@ -12,7 +12,17 @@
 1. Create a new MetaMask wallet
 2. Copy your wallet address and private key
 
-#### Install Docker and Build Validator Image
+#### Install Docker
 1. SSH into your new VM by clicking on SSH by your VM instance in Google Cloud Console
-1. By default Docker is not installed in your new VM
-2. To install, use these commands -> sudo apt-get update -> sudo apt-get install docker.io
+2. By default Docker is not installed in your new VM
+3. To install, use these commands -> sudo apt-get update -> sudo apt-get install docker.io
+4. Give yourself permission to view, create, and run Docker images using this command -> sudo usermod -aG docker your-username
+5. Close and reopen your terminal
+5. Check if Docker has been installed by running the command docker ps -a. This will show you all containers both running and stopped
+
+#### Build Validator Image and Run Container
+1. Open your Dockerfile, change the wallet address and private key fields and give a name to your validator
+2. Transfer your Dockerfile to your VM via the SSH terminal
+3. Build image using this command -> docker build . -f Dockerfile -t elixir-validator
+4. Run the image in a new container using this command -> docker run -d --restart unless-stopped --name ev elixir-validator
+5. To verify that your container is running, use the command docker ps -a
